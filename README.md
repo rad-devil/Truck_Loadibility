@@ -58,22 +58,24 @@ This project focuses on the core functionalities provided by the following main 
 In `client/package.json`, we have:
 
 "proxy": "http://localhost:5000"
-Workflow
-User selects carton options in CartonSelector.js.
 
-app.js makes API call to server.py via relative URL (thanks to proxy configuration).
+## Workflow
 
-server.py runs the heuristic and knapsack algorithm logic and returns a JSON response.
+1. User selects carton options in CartonSelector.js.
 
-CartonSelector.js updates the UI with optimized arrangement and carton counts.
+2. app.js makes API call to server.py via relative URL (thanks to proxy configuration).
 
-User views visualized truck load results.
+3. server.py runs the heuristic and knapsack algorithm logic and returns a JSON response.
 
-Algorithms and Logic
-Heuristic approach: Evaluates the current state using carton stack height and unused space in width.
+4. CartonSelector.js updates the UI with optimized arrangement and carton counts.
 
-Knapsack approach: Uses dynamic programming to find tighter fills without real-time adjustments, accounting for ±2% carton size variation.
+5. User views visualized truck load results.
 
-Heuristic correction layer: Fine-tunes the knapsack result without backtracking.
+## Algorithms and Logic
+- Heuristic approach: Evaluates the current state using carton stack height and unused space in width.
 
-Refer to medium article for full pseudocode, test cases, and detailed comparative analysis. is this definition sufficient stating the relvance of each file if ypu disgaree plese change accprdinly
+- Knapsack approach: Uses dynamic programming to find tighter fills without real-time adjustments, accounting for ±2% carton size variation.
+
+- Heuristic correction layer: Fine-tunes the knapsack result without backtracking.
+
+- Refer to medium article for full pseudocode, test cases, and detailed comparative analysis. is this definition sufficient stating the relvance of each file if ypu disgaree   plese change accprdinly
