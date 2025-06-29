@@ -78,3 +78,4 @@ In `client/package.json`, we have:
 - **Heuristic correction layer**: Fine-tunes the knapsack result without backtracking.
 
 Refer to `medium article` for full pseudocode, test cases, and detailed comparative analysis.
+
