@@ -1,4 +1,3 @@
- Truck_Loadibility
 # Truck Load Balancing Tool
 
 ## Overview
@@ -58,7 +57,6 @@ This project focuses on the core functionalities provided by the following main 
 
 In `client/package.json`, we have:
 
-```json
 "proxy": "http://localhost:5000"
 Workflow
 User selects carton options in CartonSelector.js.
