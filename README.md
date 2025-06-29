@@ -57,7 +57,7 @@ App runs on `localhost:3000` and forwards API requests to `localhost:5000`.
 
 In `client/package.json`, we have:
 
-```json
+
 "proxy": "http://localhost:5000"
 
 
